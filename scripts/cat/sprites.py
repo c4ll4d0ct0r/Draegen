@@ -132,7 +132,7 @@ class Sprites:
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
             'shadersnewwhite', 'lightingnew',
             'whitepatches', 'tortiepatchesmasks',
-            'fademask', 'fadestarclan', 'fadedarkforest',
+            'fademask', 'fadestarclan', 'fadedarkforest', 'wingsinglecolours',
             'symbols'
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -158,7 +158,11 @@ class Sprites:
         eye_colors = [
             ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
              'HEATHERBLUE', 'SUNLITICE'],
-            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW']
+            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW', 'WHITE', 'MINT', 'OCEAN'],
+            ['VIOLET', 'PURPLE', 'RED', 'CRIMSON', 'TERMINATOR', 'SUNSET', 'PETAL', 'CANDY', 'CORAL', 'ROYAL', 'PEACH', 'SAPPHIRE'],
+            ['SEAFOAM', 'FIRE', 'DOVE', 'MARRON', 'ROSE', 'PEARL', 'DAISY', 'LAVA', 'TROPICAL', 'ASTER', 'MUD', 'CRYSTAL'],
+            ['FORESTFIRE', 'STORM', 'SEA', 'DUST', 'BANANA', 'GRASS', 'CELESTITE', 'COSMIC', 'BISMUTH', 'JET', 'DEMON', 'ELDRITCH'],
+            ['FOG', 'CLOUDY', 'GEM', 'ECLIPSE', 'NEUTRON', 'OMEN', 'STAR', 'VILE']
         ]
 
         for row, colors in enumerate(eye_colors):
@@ -186,7 +190,8 @@ class Sprites:
              'BLOSSOMSTEP', 'PEBBLE', 'TAILTWO', 'BUDDY', 'BACKSPOT', 'EYEBAGS'],
             ['BULLSEYE', 'FINN', 'DIGIT', 'KROPKA', 'FCTWO', 'FCONE', 'MIA', 'SCAR', 'BUSTER', 'SMOKEY', 'HAWKBLAZE',
              'CAKE', 'ROSINA', 'PRINCESS'],
-            ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE']
+            ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE', 'ASTERSTAR', 'FAWN', 'FULLTAIL', 
+            'HALFEAR', 'NECK', 'REVERSESPLIT', 'SPLIT', 'UMBREON']
         ]
 
         for row, patches in enumerate(white_patches):
@@ -197,7 +202,12 @@ class Sprites:
         color_categories = [
             ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK'],
             ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA'],
-            ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
+            ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE'],
+            ['ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH'],
+            ['RED', 'CRIMSON', 'BLOOD', 'DARKORANGE', 'ORANGE', 'CREAMSICLE'],
+            ['SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS'],
+            ['MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE'],
+            ['LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL']
         ]
 
         color_types = [

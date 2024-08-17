@@ -2604,6 +2604,14 @@ def generate_sprite(
                         sprites.sprites["scars" + scar + cat_sprite], (0, 0)
                     )
 
+        # draw skin
+        blendmode = pygame.BLEND_RGBA_MIN
+        new_sprite.blit(sprites.sprites['skin' + cat.pelt.skin + cat_sprite], (0, 0))
+
+        # draw wings
+        blendmode = pygame.BLEND_RGBA_MIN
+        new_sprite.blit(sprites.sprites['wing' + cat.pelt.wing + cat_sprite], (0, 0))
+
         # draw line art
         if game.settings["shaders"] and not dead:
             new_sprite.blit(
@@ -2621,7 +2629,6 @@ def generate_sprite(
             new_sprite.blit(sprites.sprites["lineartdead" + cat_sprite], (0, 0))
         # draw skin and scars2
         blendmode = pygame.BLEND_RGBA_MIN
-        new_sprite.blit(sprites.sprites["skin" + cat.pelt.skin + cat_sprite], (0, 0))
 
         if not scars_hidden:
             for scar in cat.pelt.scars:

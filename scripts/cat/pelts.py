@@ -31,17 +31,23 @@ class Pelt:
     pelt_colours = [
         'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+        'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+        'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL'
     ]
     pelt_c_no_white = [
         'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+        'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+        'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL'
     ]
     pelt_c_no_bw = [
         'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'CREAM', 'PALEGINGER',
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'CHOCOLATE', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+        'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+        'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL'
     ]
 
     tortiepatterns = ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE',
@@ -55,13 +61,19 @@ class Pelt:
                    'classic', 'sokoke', 'agouti', 'singlestripe', 'masked']
 
     pelt_length = ["short", "medium", "long"]
-    eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
-                   'PALEBLUE',
-                   'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW',
-                   'BRONZE', 'SILVER']
-    yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER']
-    blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY']
-    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL']
+    eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
+        'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 
+        'WHITE', 'MINT', 'OCEAN', 'VIOLET', 'PURPLE', 'RED', 'CRIMSON', 'TERMINATOR', 'SUNSET', 'PETAL', 'CANDY',
+         'CORAL', 'ROYAL', 'PEACH', 'SAPPHIRE', 'SEAFOAM', 'FIRE', 'DOVE', 'MARRON', 'ROSE', 'PEARL', 'DAISY', 'LAVA',
+         'TROPICAL', 'ASTER', 'MUD', 'CRYSTAL', 'FORESTFIRE', 'STORM', 'SEA', 'DUST', 'BANANA', 'GRASS', 'CELESTITE', 'COSMIC',
+         'BISMUTH', 'JET', 'DEMON', 'ELDRITCH', 'FOG', 'CLOUDY', 'GEM', 'ECLIPSE', 'NEUTRON', 'OMEN', 'STAR', 'VILE']
+    yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'WHITE', 'SUNSET', 'ROYAL', 'PEACH', 'PEARL',
+                   'DUST', 'CELESTITE', 'ELDRITCH', 'CLOUDY', 'OMEN']
+    blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'OCEAN', 'SAPPHIRE', 'SEAFOAM', 'TROPICAL',
+                 'MUD','CRYSTAL', 'STORM', 'SEA', 'COSMIC', 'FOG', 'GEM', 'NEUTRON']
+    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'MINT', 'ASTER', 'BANANA', 'GRASS']
+    purple_eyes = ['VIOLET', 'PURPLE', 'PETAL', 'CANDY', 'DOVE', 'DAISY', 'BISMUTH', 'STAR']
+    red_eyes = ['RED', 'CRIMSON', 'TERMINATOR', 'CORAL', 'FIRE', 'MARRON', 'ROSE', 'LAVA', 'FORESTFIRE', 'JET', 'DEMON', 'ECLIPSE', 'VILE']
 
     # bite scars by @wood pank on discord
 
@@ -108,12 +120,14 @@ class Pelt:
     single_colours = [
         'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
+        'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+        'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+        'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL'
     ]
-    ginger_colours = ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']
-    black_colours = ['GREY', 'DARKGREY', 'GHOST', 'BLACK']
-    white_colours = ['WHITE', 'PALEGREY', 'SILVER']
-    brown_colours = ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
+    ginger_colours = ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'RED', 'CRIMSON', 'BLOOD', 'DARKORANGE', 'ORANGE', 'CREAMSICLE']
+    black_colours = ['GREY', 'DARKGREY', 'GHOST', 'BLACK', 'ORCA', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'JELLYFISH']
+    white_colours = ['WHITE', 'PALEGREY', 'SILVER', 'TIRAMISU', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MINT', 'TURQUOISE']
+    brown_colours = ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE', 'PEAT', 'DUSK', 'PEACOCK', 'MOSS']
     colour_categories = [ginger_colours, black_colours, white_colours, brown_colours]
     eye_sprites = [
         'YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'BLUEYELLOW', 'BLUEGREEN',
@@ -145,12 +159,26 @@ class Pelt:
     skin_sprites = ['BLACK', 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
                     'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
 
+    wing = ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
+    'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
+    'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+    'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+    'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL']
+    
+    wing_single_sprites = ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
+        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
+        'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+        'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+        'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL']
+
+
     """Holds all appearance information for a cat. """
 
     def __init__(self,
                  name: str = "SingleColour",
                  length: str = "short",
                  colour: str = "WHITE",
+                 wing:str="WHITE",
                  white_patches: str = None,
                  eye_color: str = "BLUE",
                  eye_colour2: str = None,
@@ -176,6 +204,7 @@ class Pelt:
                  ) -> None:
         self.name = name
         self.colour = colour
+        self.wing = wing
         self.white_patches = white_patches
         self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
@@ -217,6 +246,7 @@ class Pelt:
         new_pelt.init_scars(age)
         new_pelt.init_accessories(age)
         new_pelt.init_eyes(parents)
+        new_pelt.init_wings(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
 
@@ -312,12 +342,19 @@ class Pelt:
         elif self.pattern == "MINIMAL4":
             self.pattern = "MINIMALFOUR"
         
+    def init_wings(self, parents):
+        # if not parents:
+        #     self.wing = choice(Pelt.wing)
+        # else:
+        #     self.wing = choice([i.pelt.wing for i in parents] + [choice(Pelt.wing)])
+        self.wing = choice(Pelt.wing)
+        
     def init_eyes(self, parents):
         if not parents:
             self.eye_colour = choice(Pelt.eye_colours)
         else:
-            self.eye_colour = choice([i.pelt.eye_colour for i in parents] + [choice(Pelt.eye_colours)])
-
+            self.eye_colour = choice([i.pelt.eye_colour for i in parents] + [choice(Pelt.eye_colours)])  
+            
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
         if self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE'] or self.colour == 'WHITE':
@@ -333,13 +370,19 @@ class Pelt:
 
         if not random.randint(0, num):
             if self.eye_colour in Pelt.yellow_eyes:
-                eye_choice = choice([Pelt.blue_eyes, Pelt.green_eyes])
+                eye_choice = choice([Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes, Pelt.purple_eyes])
                 self.eye_colour2 = choice(eye_choice)
             elif self.eye_colour in Pelt.blue_eyes:
-                eye_choice = choice([Pelt.yellow_eyes, Pelt.green_eyes])
+                eye_choice = choice([Pelt.yellow_eyes, Pelt.green_eyes, Pelt.red_eyes, Pelt.purple_eyes])
                 self.eye_colour2 = choice(eye_choice)
             elif self.eye_colour in Pelt.green_eyes:
-                eye_choice = choice([Pelt.yellow_eyes, Pelt.blue_eyes])
+                eye_choice = choice([Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.red_eyes, Pelt.purple_eyes])
+                self.eye_colour2 = choice(eye_choice)
+            elif self.eye_colour in Pelt.purple_eyes:
+                eye_choice = choice([Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.red_eyes, Pelt.green_eyes])
+                self.eye_colour2 = choice(eye_choice)
+            elif self.eye_colour in Pelt.red_eyes:
+                eye_choice = choice([Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.purple_eyes])
                 self.eye_colour2 = choice(eye_choice)
 
     def pattern_color_inheritance(self, parents: tuple = (), gender="female"):
@@ -630,6 +673,18 @@ class Pelt:
         self.reverse = choice([True, False])
         # skin chances
         self.skin = choice(Pelt.skin_sprites)
+
+        # ------------------------------------------------------------------------------------------------------------#
+        #   WING PATTERN ZAPPING
+        # ------------------------------------------------------------------------------------------------------------#
+
+        chosen_pattern = random.choice(Pelt.wing_single_sprites)
+        
+        self.wing = chosen_pattern
+        
+        # ------------------------------------------------------------------------------------------------------------#
+        #   END WING PATTERN ZAPPING
+        # ------------------------------------------------------------------------------------------------------------#
 
         if self.length != 'long':
             self.cat_sprites['adult'] = random.randint(6, 8)

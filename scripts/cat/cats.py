@@ -973,6 +973,8 @@ class Cat:
             colour = "sunlit ice"
         elif colour == "greenyellow":
             colour = "green-yellow"
+        elif colour == 'forestfire':
+            colour = 'forest fire'
         if self.pelt.eye_colour2:
             if colour2 == "palegreen":
                 colour2 = "pale green"
@@ -988,6 +990,8 @@ class Cat:
                 colour2 = "sunlit ice"
             if colour2 == "greenyellow":
                 colour2 = "green-yellow"
+            if colour2 == 'forestfire':
+                colour2 = 'forest fire'
             colour = colour + " and " + colour2
         return colour
 
@@ -3370,6 +3374,7 @@ class Cat:
                 "sprite_adult": self.pelt.cat_sprites["adult"],
                 "sprite_senior": self.pelt.cat_sprites["senior"],
                 "sprite_para_adult": self.pelt.cat_sprites["para_adult"],
+                "wing": self.pelt.wing,
                 "eye_colour": self.pelt.eye_colour,
                 "eye_colour2": self.pelt.eye_colour2 if self.pelt.eye_colour2 else None,
                 "reverse": self.pelt.reverse,
