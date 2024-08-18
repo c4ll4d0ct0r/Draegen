@@ -159,11 +159,11 @@ class Pelt:
     skin_sprites = ['BLACK', 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
                     'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
 
-    wing = ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
-    'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-    'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
-    'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
-    'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL']
+    #wing = ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
+    #'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
+    #'CHOCOLATE', 'ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH', 'RED', 'CRIMSON', 'BLOOD',
+    #'DARKORANGE', 'ORANGE', 'CREAMSICLE', 'SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS',
+    #'MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE', 'LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL']
     
     wing_single_sprites = ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
@@ -347,7 +347,7 @@ class Pelt:
         #     self.wing = choice(Pelt.wing)
         # else:
         #     self.wing = choice([i.pelt.wing for i in parents] + [choice(Pelt.wing)])
-        self.wing = choice(Pelt.wing)
+        self.wing = choice(Pelt.wing_single_sprites)
         
     def init_eyes(self, parents):
         if not parents:
