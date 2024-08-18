@@ -222,6 +222,21 @@ class Sprites:
                 for color_type in color_types:
                     self.make_group(color_type, (col, row), f'{color_type[:-7]}{color}')
 
+        wing_single_colours = [
+            ['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK'],
+            ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA'],
+            ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE'],
+            ['ORCA', 'PEAT', 'DUSK', 'PEACOCK', 'TIRAMISU', 'JELLYFISH'],
+            ['RED', 'CRIMSON', 'BLOOD', 'DARKORANGE', 'ORANGE', 'CREAMSICLE'],
+            ['SUNFLOWER', 'YELLOW', 'BANANA', 'PEAR', 'GRASS', 'MOSS'],
+            ['MINT', 'TURQUOISE', 'BLUE', 'OCEAN', 'NIGHT', 'PURPLE'],
+            ['LAVENDER', 'ROSE', 'BUBBLEGUM', 'PEARL']
+        ]
+
+        for row, colors in enumerate(wing_single_colours):
+            for col, color in enumerate(colors):
+                self.make_group('wingsinglecolours', (col, row), f"wingsinglecolours{color}")
+
         # tortiepatchesmasks
         tortiepatchesmasks = [
             ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'HALF', 'STREAK', 'MASK', 'SMOKE'],
