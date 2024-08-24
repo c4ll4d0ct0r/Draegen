@@ -2478,7 +2478,7 @@ def generate_sprite(
             cat_sprite = str(cat.pelt.cat_sprites["newborn"])
         else:
             cat_sprite = str(cat.pelt.cat_sprites[age])
-
+    debug_wing_var = None
     new_sprite = pygame.Surface(
         (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA
     )
@@ -2609,6 +2609,7 @@ def generate_sprite(
         new_sprite.blit(sprites.sprites['skin' + cat.pelt.skin + cat_sprite], (0, 0))
 
         # draw wings
+        debug_wing_var = 'wing' + cat.pelt.wing + cat_sprite
         blendmode = pygame.BLEND_RGBA_MIN
         new_sprite.blit(sprites.sprites['wing' + cat.pelt.wing + cat_sprite], (0, 0))
 
@@ -2692,7 +2693,7 @@ def generate_sprite(
             new_sprite = pygame.transform.flip(new_sprite, True, False)
 
     except (TypeError, KeyError):
-        logger.exception("Failed to load sprite")
+        logger.exception(f"Failed to load sprite: wing data:{debug_wing_var}")
 
         # Placeholder image
         new_sprite = image_cache.load_image(
