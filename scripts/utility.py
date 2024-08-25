@@ -2611,7 +2611,7 @@ def generate_sprite(
         # draw wings
         debug_wing_var = 'wing' + cat.pelt.wing + cat_sprite
         blendmode = pygame.BLEND_RGBA_MIN
-        new_sprite.blit(sprites.sprites['wing' + cat.pelt.wing + cat_sprite], (0, 0))
+        new_sprite.blit(sprites.sprites['wingsinglecolours' + cat.pelt.wing + cat_sprite], (0, 0))
 
         # draw line art
         if game.settings["shaders"] and not dead:
